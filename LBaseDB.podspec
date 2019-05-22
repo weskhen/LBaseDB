@@ -15,13 +15,13 @@ Pod::Spec.new do |s|
   线程安全的FMDB封装类
                      DESC
 
-  s.homepage     = "https://github.com/weskhen/LBaseDB"
+  s.homepage     = "https://github.com/weskhen/LBaseDB.git"
 
   s.license      = "Code is MIT, then custom font licenses"
 
   s.author             = { "wujian" => "wujian516411567@163.com" } 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/weskhen/LBaseDB", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/weskhen/LBaseDB.git", :tag => "#{s.version}" }
   
   #s.subspec 'LBaseDB' do |ss|
   #  ss.source_files = 'Public/LBaseDB/*.{h,m}'

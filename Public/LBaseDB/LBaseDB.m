@@ -681,9 +681,9 @@ static LBaseDB *jqdb = nil;
     [_db open];
 }
 
-- (NSInteger)lastInsertPrimaryKeyId:(NSString *)tableName
+- (int64_t)lastInsertPrimaryKeyId:(NSString *)tableName
 {
-    NSInteger pkid = 0;
+    int64_t pkid = 0;
     NSString *sqlstr = [NSString stringWithFormat:@"SELECT * FROM %@ where pkid = (SELECT max(pkid) FROM %@)", tableName, tableName];
     FMResultSet *resultSet = [self.db executeQuery:sqlstr];
     while ([resultSet next])
